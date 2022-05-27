@@ -106,9 +106,9 @@ async function buildEsModulesBundle() {
 export function swapLocale(lhr, requestedLocale) {
   return {
     lhr,
-    missingIcuMessageIds: []
+    missingIcuMessageIds: [],
   };
-};
+}
 
 /**
  * Populate the i18n string lookup dict with locale data
@@ -118,7 +118,7 @@ export function swapLocale(lhr, requestedLocale) {
  * @param {Record<string, {message: string}>} lhlMessages
  */
 function registerLocaleData(locale, lhlMessages) {
-    LOCALE_MESSAGES[locale] = lhlMessages;
+  // ...
 }
 export const format = {registerLocaleData};
         `,
